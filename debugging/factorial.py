@@ -7,5 +7,8 @@ def factorial(n):
         n -= 1
     return result
 
-f = factorial(int(sys.argv[1]))
-print(f)
+if len(sys.argv) > 1:
+    f = factorial(int(sys.argv[1]))
+    print(f)
+else:
+    print("Usage: ./factorial.py <number>")
